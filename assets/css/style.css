@@ -1,0 +1,401 @@
+#backgroundHeader{
+    background: lightgreen;
+}
+
+body, .container-fluid{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+/*NAVBAR */
+#navbar{
+    display:none;
+    list-style:none;
+    display:table-cell;
+    font-size:16px;
+    color:#fff;
+    padding:16px 8px;
+    display:block;
+    text-decoration:none;
+    background-color:#fff;
+    color:#171717;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+.logo{
+    margin-left: 5%;
+    width: 50%;
+    height: 50%;
+}
+.logoCenter{
+    width: 30%;
+    height: 40%;
+   
+}
+.logoTitle{
+    color: #bf241c;
+    font-size: 4em;
+    font-family: Arial;
+    margin-left: 1%;
+    font-weight: bold;
+}
+/*CHAMP DE RECHERCHE*/
+.display{
+    display: none;
+}
+.search{
+    margin-top: 7% !important;
+    margin-left: 13%;
+}
+.inputSearch{
+    width: 185px !important;
+}
+/*CAROUSEL*/
+.carousel{
+    width: 100%;
+}
+.carousel-inner img{
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    padding-bottom: 3em;
+}
+/*page d'accueil*/
+aside {
+    float: right;
+}
+.textAccueil{
+    padding-top: 5em;
+    text-align:justify;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 14px;
+}
+.titleAc{
+    padding-top: 1em;
+    padding-bottom: .5em;
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-style: italic;
+    color: blue;
+    font-size: 16px;
+}
+.textAccueilRn{
+    padding-top: 1em;
+    text-align: center;
+    margin-left: .5em;
+    font-style: oblique;
+    color: #FF90C0;
+    display: block;
+}
+.imageAcc{
+    width: 300px;
+    height: 200px;
+}
+/*page notre site*/
+.titleNs{
+    padding-top: 2em;
+    padding-bottom: 1em;
+    text-align: center;
+    color: blue;
+    font-family: sans-serif;
+    font-style: italic;
+}
+.imageNs{
+    padding-top: 1em;
+    width: 300px;
+    height: 200px;   
+}
+.sousTitleNs{
+    padding-top: 1em;
+    padding-bottom: .5em;
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-style: italic;
+    color: green;
+}
+.textNs{
+    padding-top: 5em;
+    padding-bottom: 2em;
+    margin-left: .5em;
+    text-align: center;
+    font-family: serif;
+    font-style: oblique;
+    color: lightgreen;
+    display: block; 
+}
+
+/*page reserve*/
+
+/*page contact*/
+.backgroundContact{
+    background-image:url(../images/image10.jpg);
+   width: auto;
+}
+
+/*sidebar*/
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: lightgreen;
+    color: black;
+    transition: all 0.3s;
+    font-style: italic;
+    font-family: serif;
+    font-size: 16px;
+    height: 100vh;
+    z-index: 999;
+    position: relative;
+    left:0;
+}
+#sidebar.active {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+}
+#sidebar.active .sidebar-header h3, #sidebar.active .CTAs {
+    display: none;
+}
+#sidebar.active .sidebar-header strong {
+    display: block;
+    font-style: italic;
+    font-family: serif;
+    font-size: 10px;
+}
+#sidebar ul li a {
+    text-align: left;
+}
+#sidebar.active ul li a {
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 0.85em;
+    font-style: italic;
+    font-family: serif;
+}
+#sidebar.active ul li a i {
+    margin-right:  0;
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+#sidebar.active ul ul a {
+    padding: 10px !important;
+}
+#sidebar.active a[aria-expanded="false"]::before, #sidebar.active a[aria-expanded="true"]::before {
+    top: auto;
+    bottom: 5px;
+    right: 50%;
+    transform: translateX(50%);
+}
+#sidebar .sidebar-header {
+    text-align: center;
+    background: lightgreen;
+    font-style: italic;
+    font-family: serif;
+    font-size: 60px;
+}
+.sidebarTitle{
+    font-size: 0.5em ;
+    font-weight: bold;
+}
+#sidebar .sidebar-header strong {
+    display: none;
+    font-size: 1em;
+}
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #F98BFF;
+    background: #fff;
+    font-style: italic;
+    font-family: serif;
+    font-size: 24px;
+}
+#sidebar ul li a i {
+    margin-right: 10px;
+}
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: black;
+    background: lightgreen;
+}
+a[data-toggle="collapse"] {
+    position: relative;
+}
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before{
+    content: ">";
+    color: black;
+    display: block;
+    position: absolute;
+    font-family: Arial;
+    right: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+a[aria-expanded="true"]::before {
+    content: "<";
+}
+.buttonSidebarDL[aria-expanded="false"]::before{
+    content: ">>";
+    color: black;
+    display: block;
+    font-family: Arial;
+    position: relative;
+    left: 45px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: lightgreen;
+}
+.buttonSidebarDL[aria-expanded="true"]::after {
+    content: "<<" !important;
+    color: red;
+}
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: lightgreen;
+}
+ul.CTAs {
+    padding: 20px;
+}
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+/*fin sidebar*/
+.textC{
+    padding-top: 5em;
+    padding-bottom: 1em;
+    margin-left: 6em;
+    text-align: center;
+    font-family: serif;
+    font-style: oblique;
+    font-weight: bold; 
+    color: white;
+}
+.titleC{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-style: italic;
+    color: #38226A; 
+    font-weight: bold;
+}
+/*page connexion*/
+/*Début du formulaire*/
+h1 {
+    color: green;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-style: oblique;
+    text-align: center;
+
+} 
+legend{
+    color: #744CD0;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: oblique;
+    text-decoration:underline ;
+    padding-left: 35px; 
+}
+.valid{
+    color: white;
+    background-color: #5063D9;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-style: oblique;
+    border-radius: 20px;
+    display: block;
+    margin : auto;
+}
+fieldset{
+    border-radius: 30px;
+    border: 3px #9D7CE7 groove;
+    background-color:#CCC;
+    max-width:500px;
+    padding:16px;	
+
+}
+.form{
+    font-size: 14px;
+    font-style: oblique;
+    font-family: serif;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-left: 1em;
+}
+/*fin du formulaire*/
+
+/*page inscription*/
+
+
+
+
+
+/* FOOTER */
+footer {
+    padding: 10px 0;
+    color: #6872B5;
+    text-align: center;
+    background-color: #B0FB60;
+    padding-top: 1em;
+}
+.fa-share-square, .fa-truck,
+.fa-users, .fa-lightbulb{
+    font-size: 40px;
+    border: solid #FCAC45 4px;
+    width: 100px;
+    height: 100px;
+    padding: 27px 25px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    color: #FFF;
+    transition: 2s
+}
+.fa-lightbulb:hover{
+    color:yellow;
+    transition: .6s;
+}
+.fa-users:hover{
+    color: cyan;
+    transition: .6s;
+}
+.h4Foot {
+    color: grey;
+    text-decoration: underline;
+}
+
+/*ICONS */
+.fa-facebook{
+    font-size: 2.5em;
+    color: #4267b2;
+}
+.fa-twitter-square{
+    font-size: 2.5em;
+    color: #1da1f2;
+}
+.fa-linkedin{
+    font-size: 2.5em;
+    color: #0077b5;
+}
+.fa-google-plus-square{
+    font-size: 2.5em;
+    color: #db4437;
+}
+
